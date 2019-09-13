@@ -1,0 +1,26 @@
+{   
+    "nav_menu":
+    {
+        "all_projects" : "Gjitha projektet",
+        "create_project" : "Krijo projekt",
+        "settings" : "Ndryshimet",
+        "language" : "Gjuha",
+        "profile" : "Profili",
+        "signout" : "Ç'kyqu"
+    },
+    "widgets":
+    {
+        "new_applications" : "Aplikimet e reja",
+        "shortlisted" : "Favorit",
+        "rejected" : "Anuluara",
+        "selected" : "Zgjedhura"
+    },
+    "components":
+    {
+        "title" : "Bileşenler"
+    },
+    "vuex":
+    {
+        "title" : "Vuex Store gönderilen ve yazdırılan özel bir mesaj."
+    }
+}

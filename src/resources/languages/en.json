@@ -1,0 +1,26 @@
+{   
+    "nav_menu":
+    {
+        "all_projects" : "All projects",
+        "create_project" : "Create a project",
+        "settings" : "Settings",
+        "language" : "Lang",
+        "profile" : "Profile",
+        "signout" : "Sign out"
+    },
+    "widgets":
+    {
+        "new_applications" : "New applications",
+        "shortlisted" : "Shortlisted",
+        "rejected" : "Rejected",
+        "selected" : "Selected"
+    },
+    "components":
+    {
+        "title" : "Components"
+    },
+    "vuex":
+    {
+        "title" : "A custom message sent to Vuex Store and printed."
+    }
+}
