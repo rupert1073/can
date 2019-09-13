@@ -20,7 +20,7 @@
             href: '#'
           },
           {
-            text: 'Replacement for The Tour main actor feature film',
+            text: 'Audition for main actor',
             active: true
           }
         ]

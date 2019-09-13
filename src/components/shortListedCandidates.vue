@@ -27,7 +27,7 @@
                                     {{candidate.bio}}
                                 </p>
                             </b-col>
-                             <b-col md="2" class="text-right">
+                             <b-col md="2" class="right-text action-menu">
                                   <!-- DROPDOWN MENU ACTION -->
                                   <b-dropdown size="lg"  variant="link" toggle-class="text-decoration-none" no-caret>
                                     <template v-slot:button-content>

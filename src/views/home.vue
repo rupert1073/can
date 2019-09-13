@@ -3,7 +3,7 @@
     
       <b-container>
         <breadcrumb/>
-        <page-title title="Replacement for The Tour main actor feature film " showButtons/>
+        <page-title title="Audtion for main actor" showButtons/>
         <top-widgets/>
       
         <b-row  align-v="start" class="page--content">

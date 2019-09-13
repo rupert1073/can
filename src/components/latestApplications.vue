@@ -14,13 +14,13 @@
                       <template v-else>
                           <h3>Search a candidate...</h3>  
                           <form>
-                               <input class="search" @input="searchQuery" type="text" placeholder="E.x. Can Mehmet" v-model="search_query_candidates">
+                               <input class="search"  type="text" placeholder="E.x. Can Mehmet" v-model="search_query_candidates">
                           </form>
                          
                       </template>
                      
                     </b-col>
-                    <b-col md="5" class="text-right">
+                    <b-col md="5" class="right-text">
                         <b-button class="btn primary_btn outline"  v-if="!search_active">
                             <eva-icon name="funnel-outline"  width="15"></eva-icon>
                             Filter
@@ -49,7 +49,7 @@
                         <div class="body_item" v-for="(application,index) in filteredList" :key="index">
                             <b-row align-v="start">
                                 <!-- User image -->
-                                <b-col md="2" class="user_image">
+                                <b-col md="2" sm="2" class="user_image">
                                     <div class="image_container">
                                         <div class="shortlisted" v-if="application.shortlisted">
                                                 <eva-icon width="15px" name="star" ></eva-icon>
@@ -58,7 +58,7 @@
                                     </div>  
                                     
                                 </b-col>
-                                <b-col md="8">
+                                <b-col md="8" sm="6">
                                       <!-- Username -->
                                       <h4>{{application.name}}
 
@@ -86,7 +86,7 @@
 
                                       
                                 </b-col>
-                                <b-col md="2" class="text-right">
+                                <b-col md="2" sm="2" class="right-text action-menu">
                                       <!-- DROPDOWN MENU ACTION -->
                                       <b-dropdown size="lg"  variant="link" toggle-class="text-decoration-none" no-caret>
                                         <template v-slot:button-content>
