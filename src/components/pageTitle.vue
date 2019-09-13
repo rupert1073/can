@@ -9,7 +9,7 @@
             <b-col sm="4" class="text-right" >
                     <template v-if="showButtons">
                         <b-button class="btn primary_btn outline">
-                            <eva-icon name="edit-outline" width="15"></eva-icon> Edit vacancy
+                            <eva-icon name="edit-outline" width="15"></eva-icon> Edit audition
                         </b-button>
                     </template>
                

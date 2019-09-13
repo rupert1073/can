@@ -16,11 +16,11 @@
             href: '#'
           },
           {
-            text: 'Position',
+            text: 'Auditions',
             href: '#'
           },
           {
-            text: 'Frontend developer',
+            text: 'Replacement for The Tour main actor feature film',
             active: true
           }
         ]

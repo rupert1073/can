@@ -4,6 +4,7 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const path = require('path')
 
 module.exports = {
+    
     configureWebpack: {
       // We provide the app's title in Webpack's name field, so that
       // it can be accessed in index.html to inject the correct title.
@@ -12,6 +13,7 @@ module.exports = {
       resolve: {
         alias: require('./aliases.config').webpack,
       },
+      
       plugins: [
         
         new webpack.IgnorePlugin(/^\.\/locale$/, /Codemirror$/, /lodash$/),

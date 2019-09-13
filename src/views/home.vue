@@ -3,13 +3,15 @@
     
       <b-container>
         <breadcrumb/>
-        <page-title title="Frontend developer position" showButtons/>
+        <page-title title="Replacement for The Tour main actor feature film " showButtons/>
         <top-widgets/>
       
-        <b-row no-gutters align-v="top" class="page--content">
-            <latest-applications/>
-            <b-col md="4">
-                sds
+        <b-row  align-v="start" class="page--content">
+            <b-col md="7">
+               <latest-applications/>
+            </b-col>
+            <b-col md="5">
+                <shortlisted-candidates/>
             </b-col>
         </b-row>
 
@@ -29,6 +31,7 @@ import breadcrumb from "@src/components/breadcrumb"
 import pageTitle from "@src/components/pageTitle"
 import topWidgets from "@src/components/topWidgets"
 import latestApplications from "@src/components/latestApplications"
+import shortlistedCandidates from "@src/components/shortListedCandidates"
 export default {
   name: 'Homepage',
   components: {
@@ -36,6 +39,7 @@ export default {
       'page-title': pageTitle,
       'top-widgets': topWidgets,
       'latest-applications': latestApplications,
+      'shortlisted-candidates': shortlistedCandidates,
   },
   data () {
     return {
