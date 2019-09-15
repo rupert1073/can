@@ -1,26 +1,44 @@
 {   
-    "nav_menu":
+    "menu":
     {
-        "all_projects" : "Gjitha projektet",
-        "create_project" : "Krijo projekt",
-        "settings" : "Ndryshimet",
-        "language" : "Gjuha",
-        "profile" : "Profili",
-        "signout" : "Ç'kyqu"
+        "all_projects" : "Butun projeler",
+        "create_project" : "Proje olustur",
+        "settings" : "Ayarlar",
+        "language" : "Dil",
+        "profile" : "Profil",
+        "signout" : "Oturumu kapat"
+    },
+     "buttons": 
+    {
+        "filter": "Filtre",
+        "search": "Ara",
+        "search_close" : "Arayamayi kapat",
+        "view_profile" : "Profili goruntule",
+        "add_to_shortlist" : "Favorilere ekle",
+        "remove_from_shortlist" : "Favoriden cikart",
+        "assign_label" : "Etiket ata",
+        "reject_application" : "Uygulamayı reddet",
+        "edit_audition": "Secmleri duzenle"
     },
     "widgets":
     {
-        "new_applications" : "Aplikimet e reja",
-        "shortlisted" : "Favorit",
-        "rejected" : "Anuluara",
-        "selected" : "Zgjedhura"
+        "new_applications" : "Yeni uygulama",
+        "shortlisted" : "Kisa listede",
+        "rejected" : "Reddedildi",
+        "selected" : "Secildi"
     },
-    "components":
+    "latest_applications":
     {
-        "title" : "Bileşenler"
+        "latest_applications" : "Son başvurulan adaylar",
+        "desc" : " Bu seçmelere başvuran adaylar başvuru tarihine göre listelenir.  ",
+        "search_candidate" : "Bir aday ara ...",
+        "search_candidate_ex" : "mesela : Can Mehmet",
+        "search_no_resulsts" : "Üzgünüz, bu isimde aday yok."
+
     },
-    "vuex":
+    "shortlisted_candidates":
     {
-        "title" : "Vuex Store gönderilen ve yazdırılan özel bir mesaj."
+        "title" : "Kısa listeye giren adaylar",
+        "desc" : "Mevcut kısa listeye aday ekleyin veya kaldırın."
     }
 }

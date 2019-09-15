@@ -1,0 +1,112 @@
+
+/* CSS Document */
+body{
+    color:$color--text;
+    font-family: 'Poppins', sans-serif;
+    background-color : $admin-bg;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    margin:0;
+}
+
+h1{
+    font-size:22px;
+    color:$color--black;
+    font-weight:500;
+    span{
+           width:7px;
+           height:7px;
+           background:$color--primary;
+           display:inline-block;
+           border-radius:50px;
+    }
+}
+
+h2{
+    font-size:20px;
+    color:$color--black;
+    font-weight:500;
+}
+
+h3{
+    font-size:18px;
+    color:$color--black;
+    font-weight:500;
+}
+
+h4{
+    font-size:20px;
+    color:$color--black;
+    font-weight:400;
+}
+h5{
+    font-size:14px;
+    color:$color--black;
+    text-transform:uppercase;
+    font-weight:600;
+    margin:10px 0;
+
+}
+h6{
+    font-size:11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+i {
+    vertical-align: middle;
+}
+
+
+::placeholder {
+    color: #BFBFBF;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #BFBFBF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #BFBFBF;
+}
+
+.error404{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background: #01807f0f;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+p{
+    :not(.nav-link){
+            font-size:14px;
+            color:#6c6e74;
+    }       
+   
+}
+.page--title{
+    margin-bottom:50px;
+}
+.page--content{
+    margin-top:50px;
+}
+
+.bg--white{
+    background: #fff;
+}
+.content--border{
+    border : 1px solid #ECECEC;
+    box-shadow: 0px 12px 34px -24px rgba(0,0,0,0.20);
+}
+.right-text{
+    text-align:right;
+}
+

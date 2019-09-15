@@ -1,8 +1,6 @@
 const state = {
     message: []
 }
-
-
 const mutations = {
     SET_MESSAGE (state,data) {
         state.message = data

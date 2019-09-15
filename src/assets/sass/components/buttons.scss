@@ -1,1 +1,57 @@
 
+
+.btn{
+    font-size:15px;
+    transition: 0.2s ease-in;
+    &.primary_btn{
+            background-color:$color--primary;
+            border:1px solid $color--primary;
+            color: #fff;
+            svg{
+                    fill: #fff;
+            }
+            &.outline { 
+                    background:none;
+                    color:$color--primary;
+                    svg{
+                            fill: $color--primary;
+                    }
+                    &:focus{
+                            box-shadow:none;
+                    }
+                    &:active{
+                            box-shadow:none;
+                            outline:none;
+                            background-color:$color--primary;
+                            border:1px solid $color--primary;
+                            color: #fff;
+                            svg{
+                                    fill: #fff;
+                            }
+                    }
+            }
+           
+            
+    }
+   
+    &:hover{
+            transform: translate(0,-3px);
+    }
+    &:focus{
+         outline:none;
+         box-shadow:none;
+    }
+  
+}
+.btn-link {
+    font-weight: 400;
+    color: #04258e;
+    text-decoration: none;
+    svg, i{
+            fill: #04258e,
+    }
+    &:hover,&:focus{
+            text-decoration:none;
+
+    }
+}

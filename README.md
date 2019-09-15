@@ -1,6 +1,6 @@
-# VueJs - VueCLi3 - Starter Theme
+# How to run this project?
 
-## Project setup
+## In root directory of this project open terminal and run
 ```
 npm install
 ```
@@ -13,11 +13,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Tests server inside dist folder
-```
-serve -s ./dist
 ```
 
 For any questions please contact canmehmetcp@gmail.com

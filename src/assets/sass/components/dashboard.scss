@@ -1,0 +1,134 @@
+
+// Page content that lists recent candidates
+.content-item{
+    margin-bottom:90px;
+    background:#fff;
+
+    h3{
+            margin-bottom:10px;
+        }
+        p{
+                margin-bottom:0;
+        }
+
+    .content_header{
+         padding:20px 20px;
+         box-sizing: border-box;   
+         border:1px solid #efefee
+    }
+    .content_body{
+       .body_item{
+         padding:20px;
+         border-bottom:1px solid $border-color;
+            .user_image{
+            .image_container{
+                position:relative;
+                width:90%;
+                margin-left:10px;
+                .shortlisted{
+                    position:absolute;
+                    background:$shortlisted-color;
+                    width:23px;
+                    text-align:center;
+                    height:23px;
+                    border-radius:5px;
+                    left: -11px;
+                    top: -10px;
+                    i{
+                      line-height:1px;
+                      fill :#fff;
+                      
+                    }
+                }//end of shortlisted
+                img{
+                  width:100%;
+                  border-radius:5px;
+                }//end of user image
+            }//end of image container
+            }//end of user_image
+            .contact_info{
+              display:inline-block;
+              padding: 0;
+              margin:0;
+              padding-left:30px;
+                    li{
+                        display:inline-block;
+                        margin-right:10px;
+                        &:last-child{
+                              margin-right:0;
+                        }
+                        a{
+                          text-align:center;
+                          width:30px;
+                          border-radius:3px;
+                          display:inline-block;
+                          &.email{
+                            background:lighten( #13B7FF, 43%);
+                            i{
+                              fill : #13B7FF;
+                            }
+                          } 
+                          
+                        }//end of a
+                        &:hover{
+                          cursor: pointer;
+                        }
+                    }//end of li
+            }//end of contact info
+            p{
+              margin-top:10px;
+              font-size:14px;
+              max-height:39px;
+              color:#6c6e74;
+              overflow: hidden;
+              margin-bottom: 0;
+            }//end of paragprah
+        }//end of body_item
+    }//end of content_body
+
+
+    // Shortlisted candidates contents 
+    &.shortlisted-candidates{
+            
+
+            .content_body{
+                    .body_item{
+                       .user_image{
+                            .image_container{
+                                    width:100%;
+                                    margin-left:0;
+                            }
+                       }
+                       .role_details{
+                            display:inline-block;
+                            padding: 0;
+                            margin:0;
+                            padding-left:30px;
+                                  li{
+                                      display:inline-block;
+                                      margin-right:10px;
+                                      &:last-child{
+                                            margin-right:0;
+                                      }
+                                      a{
+                                        text-align:center;
+                                        width:30px;
+                                        border-radius:3px;
+                                        display:inline-block;
+                                        &.email{
+                                          background:lighten( #13B7FF, 43%);
+                                          i{
+                                            fill : #13B7FF;
+                                          }
+                                        } 
+                                        
+                                      }//end of a
+                                      &:hover{
+                                        cursor: pointer;
+                                      }
+                                  }//end of li
+                          }//end of contact info
+                    }
+            }
+    }
+}//end of content-item

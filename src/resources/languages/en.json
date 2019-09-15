@@ -1,5 +1,5 @@
 {   
-    "nav_menu":
+    "menu":
     {
         "all_projects" : "All projects",
         "create_project" : "Create a project",
@@ -8,6 +8,18 @@
         "profile" : "Profile",
         "signout" : "Sign out"
     },
+     "buttons": 
+    {
+        "filter": "Filter",
+        "search": "Search",
+        "search_close" : "Close search",
+        "view_profile" : "View profile",
+        "add_to_shortlist" : "Add to shortlist",
+        "remove_from_shortlist" : "Remove from shortlist",
+        "assign_label" : "Assign label",
+        "reject_application" : "Reject application",
+        "edit_audition": "Edit audition"
+    },
     "widgets":
     {
         "new_applications" : "New applications",
@@ -15,12 +27,18 @@
         "rejected" : "Rejected",
         "selected" : "Selected"
     },
-    "components":
+    "latest_applications":
     {
-        "title" : "Components"
+        "latest_applications" : "Recently applied candidatess",
+        "desc" : " Candidates applied for this audition will be listed according to applied date.  ",
+        "search_candidate" : "Search a candidate...",
+        "search_candidate_ex" : "E.x. Can Mehmet",
+        "search_no_resulsts" : " Sorry, no candidate with this name."
+
     },
-    "vuex":
+    "shortlisted_candidates":
     {
-        "title" : "A custom message sent to Vuex Store and printed."
+        "title" : "Shortlisted candidates",
+        "desc" : "Add or remove candidates to current shortlist."
     }
 }

@@ -6,15 +6,15 @@
                   <b-row >
                     <b-col md="7" >
                       <template v-if="!search_active">
-                          <h3>Recently applied candidates</h3>   
+                          <h3>{{$t('latest_applications.latest_applications')}}</h3>   
                           <p>
-                              Candidates applied for this audition will be listed according to applied date.  
+                             {{$t('latest_applications.desc')}}
                           </p> 
                       </template>
                       <template v-else>
-                          <h3>Search a candidate...</h3>  
+                          <h3>{{$t('latest_applications.search_candidate')}}</h3>  
                           <form>
-                               <input class="search"  type="text" placeholder="E.x. Can Mehmet" v-model="search_query_candidates">
+                               <input class="search"  type="text" :placeholder="$t('latest_applications.search_candidate_ex')" v-model="search_query_candidates">
                           </form>
                          
                       </template>
@@ -23,17 +23,17 @@
                     <b-col md="5" class="right-text">
                         <b-button class="btn primary_btn outline"  v-if="!search_active">
                             <eva-icon name="funnel-outline"  width="15"></eva-icon>
-                            Filter
+                            {{$t('buttons.filter')}}
                         </b-button>
                         <template v-if="!search_active">
                             <b-button variant="link" @click="toggleSearch">
                                <eva-icon name="search-outline"  width="15"></eva-icon>
-                                Search
+                                  {{$t('buttons.search')}}
                             </b-button>
                         </template>
                         <template v-else>
                              <b-button variant="link" @click="toggleSearch">
-                                  Close search
+                                   {{$t('buttons.search_close')}}
                              </b-button>
                         </template>
 
@@ -92,10 +92,10 @@
                                         <template v-slot:button-content>
                                             <eva-icon name="more-horizotnal"></eva-icon>
                                         </template>
-                                        <b-dropdown-item href="#"><eva-icon name="eye-outline" fill="#000"></eva-icon> View profile</b-dropdown-item>
-                                        <b-dropdown-item href="#"><eva-icon name="star-outline" fill="#ED8A19"></eva-icon> Add to shortlist</b-dropdown-item>
-                                        <b-dropdown-item href="#"><eva-icon name="pricetags" fill="#13B7FF"></eva-icon> Assign label</b-dropdown-item>
-                                        <b-dropdown-item href="#"><eva-icon name="close-circle" fill="#FA3434"></eva-icon> Reject application</b-dropdown-item>
+                                        <b-dropdown-item href="#"><eva-icon name="eye-outline" fill="#000"></eva-icon> {{$t('buttons.view_profile')}}</b-dropdown-item>
+                                        <b-dropdown-item href="#"><eva-icon name="star-outline" fill="#ED8A19"></eva-icon> {{$t('buttons.add_to_shortlist')}}</b-dropdown-item>
+                                        <b-dropdown-item href="#"><eva-icon name="pricetags" fill="#13B7FF"></eva-icon> {{$t('buttons.assign_label')}}</b-dropdown-item>
+                                        <b-dropdown-item href="#"><eva-icon name="close-circle" fill="#FA3434"></eva-icon>  {{$t('buttons.reject_application')}}</b-dropdown-item>
                                       </b-dropdown>
                                       <!-- END OF DROPDOWN MENU ACTION -->
                                 </b-col>
@@ -104,7 +104,7 @@
                   </template>
                   <template v-else>
                          <div class="body_item">
-                              Sorry, no candidate with this name.
+                              {{$t('latest_applications.search_no_resulsts')}}
                          </div>
                   </template>
                   

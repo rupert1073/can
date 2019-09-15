@@ -2,15 +2,12 @@ const path = require('path')
 const aliases = {
     '@': 'src',
     '@src': 'src',
-    '@fonts': 'src/assets/fonts',
     '@router': 'src/router',
     '@views': 'src/views',
     '@components': 'src/components',
     '@assets': 'src/assets',
-    '@services': 'src/services',
     '@state': 'src/state/index',
     '@state_src': 'src/state',
-    '@plugins': 'src/assets/plugins',
     '@sass': 'src/assets/sass/main.scss',
  }
 module.exports = {

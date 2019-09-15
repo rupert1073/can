@@ -1,8 +1,4 @@
 import PageHome from '@views/home'
-import PageComponents from '@views/components'
-import PageVuex from '@views/vuex'
-
-
 export default [
   {
     path: '/',
@@ -12,23 +8,6 @@ export default [
       authRequired: false
     }
   },
-  
-  
-  {
-    path :'/components',
-    component: PageComponents,
-    meta: {
-      authRequired: false,
-    }
-  },
-  {
-    path :'/vuex',
-    component: PageVuex,
-    meta: {
-      authRequired: false,
-    }
-  },
-  
   {
     path: '/404',
     name: '404',

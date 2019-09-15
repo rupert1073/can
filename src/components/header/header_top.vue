@@ -9,11 +9,11 @@
 
             <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <b-nav-item href="#">All projects</b-nav-item>
+                <b-nav-item href="#">{{$t('menu.all_projects')}}</b-nav-item>
                 <b-nav-item href="" class="nav-with-icon">
                         <img src="/images/add.svg" >
                         <p>
-                            Create a project
+                            {{$t('menu.create_project')}}
                         </p>
                 </b-nav-item>
 
@@ -26,11 +26,11 @@
                 <b-nav-item href="" class="nav-with-icon">
                         <eva-icon name="settings-2-outline" height="15px"></eva-icon>
                         <p>
-                            Settings
+                            {{$t('menu.settings')}}
                         </p>
                 </b-nav-item>
 
-                <b-nav-item-dropdown text="Lang" right>
+                <b-nav-item-dropdown :text="$t('menu.language')" right>
                     <b-dropdown-item href="#" @click="changeLanguage('en')">En</b-dropdown-item>
                     <b-dropdown-item href="#" @click="changeLanguage('tr')">Tr</b-dropdown-item>
                 </b-nav-item-dropdown>
@@ -40,40 +40,15 @@
                 <template v-slot:button-content vertical-align="top">
                    <b-img src="/images/martin.png" width="20px" rounded="circle" alt="dasdasa"></b-img>
                 </template>
-                <b-dropdown-item href="#">Profile</b-dropdown-item>
-                <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+                <b-dropdown-item href="#">{{$t('menu.profile')}}</b-dropdown-item>
+                <b-dropdown-item href="#">{{$t('menu.signout')}}</b-dropdown-item>
                 </b-nav-item-dropdown>
             </b-navbar-nav>
             </b-collapse>
         </b-container>
             
         </b-navbar>
-    <!-- 
-    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-        <el-menu-item index="1"  @click="$router.push('/')">Home</el-menu-item>
-       
-        <el-menu-item index="3" @click="$router.push('/components')">Components</el-menu-item>
-        <el-menu-item index="4"  @click="$router.push('/somethingUnOrdinary')">404</el-menu-item>
-        <el-menu-item index="5"  @click="$router.push('/vuex')">Vuex</el-menu-item>
-       
-    </el-menu>
-    -->
-
-    <!--
-    <div class="row">
-        <header>
-            <div class="input-group-btn search-panel h-a-ikon" title="Dil Seçeneği">
-                                        <button type="button" class="btn btn-default dropdown-toggle a-i-bg h-dil" data-toggle="dropdown">TR</button>
-                                        <ul class="dropdown-menu acilir-ikon h-bayrak-bg" role="menu" style="left:-11px;">
-                                            <li><a  href="#">TR</a></li>
-                                            <li><a @click="changeLanguage('en')"  href="#">EN</a></li>
-                                        </ul>
-            </div>
-           
-           
-        </header>
-    </div>
-    -->
+   
 
 
 

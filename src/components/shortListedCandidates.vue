@@ -2,14 +2,12 @@
 
         <div class="content-item shortlisted-candidates ">
                <div class="content_header">
-                     <h3>Shortlisted candidates</h3>    
+                     <h3>{{$t('shortlisted_candidates.title')}}</h3>    
                      <p>
-                         Add new candidates to job application.
+                         {{$t('shortlisted_candidates.desc')}}
                      </p>
 
                </div>
-              
-
                <div class="content_body">
                   <div class="body_item" v-for="(candidate,index) in shortlisted_candidates" :key="index">
                         <b-row align-v="start">
@@ -33,8 +31,8 @@
                                     <template v-slot:button-content>
                                         <eva-icon name="more-horizotnal"></eva-icon>
                                     </template>
-                                    <b-dropdown-item href="#"><eva-icon name="eye-outline" fill="#000"></eva-icon> View profile</b-dropdown-item>
-                                    <b-dropdown-item href="#"><eva-icon name="close-circle" fill="#FA3434"></eva-icon> Remove from shortlist</b-dropdown-item>
+                                    <b-dropdown-item href="#"><eva-icon name="eye-outline" fill="#000"></eva-icon> {{$t('buttons.view_profile')}}</b-dropdown-item>
+                                    <b-dropdown-item href="#"><eva-icon name="close-circle" fill="#FA3434"></eva-icon> {{$t('buttons.remove_from_shortlist')}} </b-dropdown-item>
                                   </b-dropdown>
                                   <!-- END OF DROPDOWN MENU ACTION -->
                             </b-col>
