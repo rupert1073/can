@@ -52,7 +52,6 @@ export default {
 // Normalize default styles across browsers,
 // https://necolas.github.io/normalize.css/
 @import '~normalize.css/normalize.css';
-@import '~vue-multiselect/dist/vue-multiselect.min.css';
 
 // Style loading bar between pages.
 // https://github.com/rstacruz/nprogress
